@@ -1,24 +1,12 @@
-# README
+# For Access
+Issue  has_many IssueRecord
+  column:  title, content: ,status, created_at, updated_at
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+IssueRecord
+  column:  user_id, issue_id, status, agreement, created_at, updated_at
 
-Things you may want to cover:
+  index issue_id, user_id
+  uniq user_id, issue_id
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+User has_many IssueRecord
+  column:name, status
