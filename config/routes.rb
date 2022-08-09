@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :managers
+  devise_for :users
   resources :issues
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
