@@ -1,0 +1,18 @@
+current directory: /Users/wuponpon/project/shopline/vote_sample/vendor/bundle/ruby/2.7.0/gems/digest-3.1.0/ext/digest/sha2
+/Users/wuponpon/.rvm/rubies/ruby-2.7.4/bin/ruby -I /Users/wuponpon/.rvm/rubies/ruby-2.7.4/lib/ruby/2.7.0 -r ./siteconf20220809-71942-tos774.rb extconf.rb
+checking for u_int8_t... yes
+checking for sys/cdefs.h... yes
+creating Makefile
+
+current directory: /Users/wuponpon/project/shopline/vote_sample/vendor/bundle/ruby/2.7.0/gems/digest-3.1.0/ext/digest/sha2
+make "DESTDIR=" clean
+
+current directory: /Users/wuponpon/project/shopline/vote_sample/vendor/bundle/ruby/2.7.0/gems/digest-3.1.0/ext/digest/sha2
+make "DESTDIR="
+compiling sha2init.c
+compiling sha2.c
+linking shared-object digest/sha2.bundle
+
+current directory: /Users/wuponpon/project/shopline/vote_sample/vendor/bundle/ruby/2.7.0/gems/digest-3.1.0/ext/digest/sha2
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 sha2.bundle ./.gem.20220809-71942-kyoac0/digest
