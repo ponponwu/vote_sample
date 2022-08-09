@@ -10,7 +10,13 @@ class IssuesController < ApplicationController
 
   # GET /issues/1
   def show
-    render json: @issue
+    # { 'true' => 7, 'false' => 12 }
+    records_approval_cnt = @issue.issue_records.group(:is_agree).count
+    render json: {
+      issue: @issue,
+      agree: records_approval_cnt['true'],
+      disagree: records_approval_cnt['false']
+    }
   end
 
   # POST /issues
